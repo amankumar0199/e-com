@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>order success</title>
+</head>
+<body>
+    <h2>Order placed successfully!</h2>
+    <a href="{% url 'create_order' %}">Place another order</a>
+</body>
+</html>
+
+{% endblock %}
