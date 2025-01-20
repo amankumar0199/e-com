@@ -3,7 +3,6 @@ import requests
 from django.shortcuts import render, redirect
 from .models import Order
 from .forms import OrderForm
-from .azure_service_bus import send_order
 def place_order(request):
     AZURE_FUNCTION_URL = "https://demoorderprocessing.azurewebsites.net/api/OrderProcessingFunction"
     username = request.user.username
